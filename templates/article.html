@@ -4,9 +4,8 @@
   {{ SITENAME }} - {{ article.title }}
 {% endblock %}
 
-{% block content %}   
+{% block maincontent %}   
   {{ super() }}
-
   {% block article %}
     <div id="article" class="pure-u-4-5">
       {% block article_title %}
