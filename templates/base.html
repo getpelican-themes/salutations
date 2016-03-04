@@ -36,6 +36,10 @@
               {% include 'chunk/categories-list.html' %}
             </div>
           {% endblock %}
+          <main id="main" tabindex="-1">
+            {% block maincontent %}
+            {% endblock %}
+          </main>
         {% endblock %}
       </div>
     </body>
