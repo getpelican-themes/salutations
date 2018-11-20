@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
-<html lang="{{ DEFAULT_LANG }}" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   {% block head %}
     <head>
-      {% include 'headers/meta.html' %}
-      {% include 'headers/stylesheets.html' %}
-      {% include 'headers/feeds.html' %}
     </head>
   {% endblock %}
 
@@ -15,25 +12,21 @@
         {% block content %}
           {% block logo %}
             <div id="logo" class="pure-u-1-6">
-              {% include 'chunk/logo.html' %}
             </div>
           {% endblock%}
 
           {% block header %}
             <div id="header" class="pure-u-5-6">
-              {% include 'chunk/header.html' %}
             </div>
           {% endblock %}  
           
           {% block menu %}
             <div id="menu" class="pure-u-1">
-              {% include 'chunk/menu.html' %}
             </div>
           {% endblock %}
 
           {% block categories %}
             <div id="categories" class="pure-u-1-5">
-              {% include 'chunk/categories-list.html' %}
             </div>
           {% endblock %}
         {% endblock %}

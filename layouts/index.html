@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "salutations/layouts/base.html" %}
 
 {% block title %}
   {{ SITENAME }}
@@ -9,7 +9,7 @@
 
   {% block articles_index %}
     <div id="articles-index" class="pure-u-4-5">
-      {% include 'chunk/articles-index.html' %}
+      {% include 'salutations/chunk/articles-index.html' %}
     </div>
   {% endblock %}
 

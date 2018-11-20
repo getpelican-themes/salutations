@@ -3,7 +3,7 @@
     {{ article.author }}
   {% endif %}
   on 
-  <time datetime="{{ article.date.isoformat() }}" pubdate="pubdate">{{ article.locale_date }}
+  <time datetime="{{ article.date }}" pubdate="pubdate">{{ article.locale_date }}
   </time>
   <br>
   Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>

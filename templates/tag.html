@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "salutations/layouts/base.html" %}
 
 {% block title %}
   {{ SITENAME }} - «{{ tag }}»
@@ -14,7 +14,7 @@
 
     {% if articles %}
       {% for article in articles %} 
-        {% include 'chunk/article-summary.html' %}
+        {% include 'salutations/chunk/article-summary.html' %}
       {% endfor %}
     {% endif %}
   </div>
